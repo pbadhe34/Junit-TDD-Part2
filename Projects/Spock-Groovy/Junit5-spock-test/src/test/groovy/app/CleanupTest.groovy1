@@ -1,0 +1,18 @@
+package app
+
+ 
+import spock.lang.Specification 
+
+class CleanupTest extends Specification
+{
+    def "CleanupTest"()
+    {
+
+  given:
+  def file = new File("D:/Data/user.txt")
+  file.createNewFile()  
+
+  cleanup:
+  file.delete()
+}
+}

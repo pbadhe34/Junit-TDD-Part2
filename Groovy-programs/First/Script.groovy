@@ -1,0 +1,2 @@
+println "ScriptJavaClass  Main "
+
